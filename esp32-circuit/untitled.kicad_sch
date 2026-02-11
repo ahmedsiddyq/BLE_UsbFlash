@@ -2,7 +2,7 @@
 	(version 20250114)
 	(generator "eeschema")
 	(generator_version "9.0")
-	(uuid "bd403c41-0de4-46e2-9931-4ae05377d6ec")
+	(uuid "3dc9da16-8088-463d-9a04-a91394c80fed")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Device:LED"
@@ -1286,6 +1286,12 @@
 			(embedded_fonts no)
 		)
 	)
+	(junction
+		(at 128.27 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9291f5f4-53fb-4d35-a03c-8ccb8dcfa58c")
+	)
 	(wire
 		(pts
 			(xy 129.54 85.09) (xy 132.08 85.09)
@@ -1305,6 +1311,16 @@
 			(type default)
 		)
 		(uuid "2d261534-080a-4081-8c8e-b35447b97fbc")
+	)
+	(wire
+		(pts
+			(xy 132.08 77.47) (xy 128.27 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2fc9c266-1113-4677-9c5f-192c885dbd9b")
 	)
 	(wire
 		(pts
@@ -1328,6 +1344,16 @@
 	)
 	(wire
 		(pts
+			(xy 128.27 72.39) (xy 130.81 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af898d96-7a7f-4b9b-9b74-c2cdd55fdfdc")
+	)
+	(wire
+		(pts
 			(xy 139.7 100.33) (xy 143.51 100.33)
 		)
 		(stroke
@@ -1338,6 +1364,16 @@
 	)
 	(wire
 		(pts
+			(xy 140.97 72.39) (xy 143.51 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b27e8685-88d3-4683-99df-35ca09354249")
+	)
+	(wire
+		(pts
 			(xy 158.75 64.77) (xy 158.75 67.31)
 		)
 		(stroke
@@ -1345,6 +1381,26 @@
 			(type default)
 		)
 		(uuid "b392e2f8-7b41-401a-8566-1fe643f39a17")
+	)
+	(wire
+		(pts
+			(xy 128.27 72.39) (xy 128.27 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3f5bd9d-b097-465b-8709-94939cb1e033")
+	)
+	(wire
+		(pts
+			(xy 142.24 77.47) (xy 143.51 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba170a02-4172-4f83-81ed-81cdf94acdd7")
 	)
 	(global_label "ch32_boot"
 		(shape input)
@@ -1722,6 +1778,205 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 128.27 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1280ca46-fd7d-4fd6-a106-0b3dabeef2bb")
+		(property "Reference" "#PWR010"
+			(at 128.27 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 125.73 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 128.27 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 128.27 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 128.27 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d0d61fe9-b46b-41b3-925a-7e7ebc246b2d")
+		)
+		(instances
+			(project "BLE_UsbFlash"
+				(path "/05dc78e9-54de-4409-8308-a29a0b1c55a3/7e60cfab-6d99-4cde-94f8-8dfcd05821ba"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 135.89 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2bfdc3ab-260f-4e2f-ab53-db97f5b8d88c")
+		(property "Reference" "SW3"
+			(at 129.056 70.878 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 131.0523 68.8968 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 135.89 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 135.89 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 135.89 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7f6699c9-0bff-41a3-86ab-ffb396f6f89f")
+		)
+		(pin "1"
+			(uuid "9c4d5500-5c70-474d-bcca-5cf90f94c8d2")
+		)
+		(instances
+			(project "BLE_UsbFlash"
+				(path "/05dc78e9-54de-4409-8308-a29a0b1c55a3/7e60cfab-6d99-4cde-94f8-8dfcd05821ba"
+					(reference "SW3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 137.16 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "42281b7d-ecdc-4b17-b4c5-34c4bb4a5403")
+		(property "Reference" "SW4"
+			(at 130.326 75.958 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 132.3223 73.9768 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 137.16 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 137.16 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 137.16 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9ac7a6e7-c87e-4495-b3cf-6115d2b22e1f")
+		)
+		(pin "1"
+			(uuid "6b6e28f3-9d31-4301-b648-4137af9dca4a")
+		)
+		(instances
+			(project "BLE_UsbFlash"
+				(path "/05dc78e9-54de-4409-8308-a29a0b1c55a3/7e60cfab-6d99-4cde-94f8-8dfcd05821ba"
+					(reference "SW4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 127 100.33 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1927,10 +2182,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "8d449253-bb2c-4e84-ab45-8d81705f54cd")
 		(property "Reference" "D1"
-			(at 134.3025 78.74 0)
+			(at 133.35 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1938,7 +2192,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 134.3025 81.28 0)
+			(at 133.35 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
