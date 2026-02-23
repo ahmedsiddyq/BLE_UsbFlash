@@ -229,7 +229,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
@@ -412,6 +412,14 @@
     [
       "05dc78e9-54de-4409-8308-a29a0b1c55a3",
       "Root"
+    ],
+    [
+      "7e60cfab-6d99-4cde-94f8-8dfcd05821ba",
+      "esp32"
+    ],
+    [
+      "038b68d1-a664-4e8c-b0ad-3c70a63aa703",
+      "ch32"
     ]
   ],
   "text_variables": {}
